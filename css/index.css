@@ -237,12 +237,16 @@ article .banner .tit li {
 article .banner .tit li.active {
     background: white;
 }
-
-/*============================================模块一*/
-.model_one .inner {
+article .model{
+    margin-top: 40px;
+}
+article .model .inner{
     border: 1px solid #ddd;
     border-radius: 5px;
+    overflow: hidden;
 }
+/*============================================模块一*/
+
 
 .model_one ul li {
     width: 304px;
@@ -263,16 +267,9 @@ article .banner .tit li.active {
 }
 
 /*=========================================================热门商品  第二模块*/
-.model_two {
-    margin-top: 40px;
 
-}
 
-.model_two .inner {
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
+
 
 .m_top {
     position: relative;
@@ -286,6 +283,7 @@ article .banner .tit li.active {
 .m_top h5 {
     margin-left: 25px;
     font-weight: 700;
+    font-size: 100%;
 }
 
 .m_top .hot_page {
@@ -326,7 +324,7 @@ article .banner .tit li.active {
     transition: 1s;
 }
 
-.model_two .m_con ul li {
+.m_con ul li {
     text-align: center;
     width: 305px;
     height: 429px;
@@ -336,11 +334,11 @@ article .banner .tit li.active {
     border-right: 1px solid #f3f3f3;
     cursor: pointer;
 }
-.model_two .m_con ul li:hover{
+.m_con ul li:hover{
     box-shadow: inset 0 0 38px rgba(0,0,0,.08);
     transition: all .15s ease;
 }
-.model_two .m_con ul li h4 {
+.m_con ul li h4 {
     line-height: 1.2;
     font-size: 14px;
     color: #333;
@@ -348,7 +346,7 @@ article .banner .tit li.active {
     margin: 0 8px;
 }
 
-.model_two .m_con ul li h6 {
+ .m_con ul li h6 {
     overflow: hidden;
     padding-top: 15px;
     font-size: 12px;
@@ -358,7 +356,7 @@ article .banner .tit li.active {
     color: #999;
 }
 
-.model_two .m_con ul li h6.red {
+.m_con ul li h6.red {
     color: #e04e4e;
 }
 
@@ -404,4 +402,71 @@ article .banner .tit li.active {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .05);
     color: #d03b34;
     background: #ffe7e5;
+}
+.m_con ul li i.buys{
+    font-style: normal;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    border: 1px solid #d5b480;
+    border-radius: 13px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .05);
+    color: #a06e37;
+    background: #fffbdf;
+}
+/*=========================================================model_three 第三模块 新品首发*/
+.m_con .new_shop{
+    width: 1224px;
+}
+.m_con .new_shop li:first-of-type{
+    width: 609px;
+    height: 428px;
+}
+.m_con .new_shop li:first-of-type img{
+    width: 609px;
+    height: 428px;
+}
+.m_con .new_shop li:first-of-type:hover{
+    opacity: .8;
+    box-shadow: inset 0 0 38px rgba(0,0,0,.08);
+    transition: all .15s ease;
+}
+/*=========================================================model_four 第四模块  坚果手机系列*/
+.m_con .phone_shop{
+    width: 1224px;
+}
+.m_con .phone_shop li:first-of-type{
+    width: 609px;
+    height: 428px;
+}
+.m_con .phone_shop li:first-of-type img{
+    width: 609px;
+    height: 428px;
+}
+.m_con .phone_shop li:first-of-type:hover{
+    opacity: .8;
+    box-shadow: inset 0 0 38px rgba(0,0,0,.08);
+    transition: all .15s ease;
+}
+/*=========================================================model_five 第五模块  官方精选配件*/
+.m_con .guanfang_shop{
+    width: 1224px;
+}
+.m_con .guanfang_shop li:first-of-type{
+    width: 609px;
+    height: 428px;
+}
+.m_con .guanfang_shop li:first-of-type img{
+    width: 609px;
+    height: 428px;
+}
+.m_con .guanfang_shop li:first-of-type:hover{
+    opacity: .8;
+    box-shadow: inset 0 0 38px rgba(0,0,0,.08);
+    transition: all .15s ease;
 }
