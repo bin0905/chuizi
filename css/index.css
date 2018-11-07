@@ -237,33 +237,38 @@ article .banner .tit li {
 article .banner .tit li.active {
     background: white;
 }
-article .model{
+
+article .model {
     margin-top: 40px;
 }
-article .model .inner{
+
+article .model .inner {
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
 }
 
-article .s .m_con ul{
+article .s .m_con ul {
     width: 1224px;
 }
-article .s .m_con ul li:first-of-type{
+
+article .s .m_con ul li:first-of-type {
     width: 609px;
     height: 428px;
 }
-article .s .m_con ul li:first-of-type img{
+
+article .s .m_con ul li:first-of-type img {
     width: 609px;
     height: 428px;
 }
-article .s .m_con ul li:first-of-type:hover{
+
+article .s .m_con ul li:first-of-type:hover {
     opacity: .8;
-    box-shadow: inset 0 0 38px rgba(0,0,0,.08);
+    box-shadow: inset 0 0 38px rgba(0, 0, 0, .08);
     transition: all .15s ease;
 }
-/*============================================模块一*/
 
+/*============================================模块一*/
 
 .model_one ul li {
     width: 304px;
@@ -284,9 +289,6 @@ article .s .m_con ul li:first-of-type:hover{
 }
 
 /*=========================================================热门商品  第二模块*/
-
-
-
 
 .m_top {
     position: relative;
@@ -351,10 +353,12 @@ article .s .m_con ul li:first-of-type:hover{
     border-right: 1px solid #f3f3f3;
     cursor: pointer;
 }
-.m_con ul li:hover{
-    box-shadow: inset 0 0 38px rgba(0,0,0,.08);
+
+.m_con ul li:hover {
+    box-shadow: inset 0 0 38px rgba(0, 0, 0, .08);
     transition: all .15s ease;
 }
+
 .m_con ul li h4 {
     line-height: 1.2;
     font-size: 14px;
@@ -363,7 +367,7 @@ article .s .m_con ul li:first-of-type:hover{
     margin: 0 8px;
 }
 
- .m_con ul li h6 {
+.m_con ul li h6 {
     overflow: hidden;
     padding-top: 15px;
     font-size: 12px;
@@ -387,14 +391,50 @@ article .s .m_con ul li:first-of-type:hover{
     transition: all .1s ease-out
 }
 
-.m_con ul li .price span {
+.m_con ul li .price .oldprice {
     text-decoration: line-through;
     color: #CCCCCC;
     margin-left: 20px;
     font-size: 12px;
     font-weight: 300;
 }
+.m_con ul li .price button{
+    width: 100px;
+    height: 30px;
+    margin: 0 5px;
+    text-align: center;
+    cursor: pointer;
+}
 
+.m_con ul li .price .ckxq {
+    border: 1px solid #e1e1e1;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #646464;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(#fff,#f9f9f9);
+
+}
+.m_con ul li .price .buycar{
+    border: 1px solid #5c81e3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    /*font-weight: 700;*/
+    color: #ffffff;
+    background-color: #6f97e5;
+    background-image: linear-gradient(#6f97e5,#527ed9);
+}
+.m_con ul li .price .buycar.none{
+    border: 1px solid #b2b2b2;
+    background-color: #d2d2d2;
+    background-image: linear-gradient(#b2b2b2,#d2d2d2   );
+
+}
 .m_con ul li .h_img img {
     display: block;
     width: 216px;
@@ -423,7 +463,8 @@ article .s .m_con ul li:first-of-type:hover{
     color: #d03b34;
     background: #ffe7e5;
 }
-.m_con ul li i.buys{
+
+.m_con ul li i.buys {
     font-style: normal;
     display: block;
     position: absolute;

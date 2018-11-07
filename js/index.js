@@ -232,7 +232,7 @@ function ajaxNew(arr){
             },
             async: false,
             dataType: "json",
-            timeout: "10000",
+            //timeout: "10000",
         }).done(function (result) {
             var data = result.data;
             for (var i = 0; i < data.length; i++) {
@@ -242,7 +242,7 @@ function ajaxNew(arr){
                     <div class="h_text">
                         <h4>${data[i].name}</h4>
                         <h6 data-hovertitle="${data[i].hovertitle}" data-title="${data[i].title}">${data[i].title}</h6>
-                        <p class="price" >￥${data[i].price} <span>${data[i].oldprice}</span></p>
+                        <p class="price" data-button="${data[i].button}" data-none="${data[i].none}" data-aprice="￥${data[i].price} <span class='oldprice'>${data[i].oldprice}</span>" >￥${data[i].price} <span class='oldprice'>${data[i].oldprice}</span></p>
                     </div>
                         <i class="${data[i].class}">${data[i].buy}</i>
                     </li>
@@ -251,10 +251,18 @@ function ajaxNew(arr){
                     if(hovertit!=""){
                         $(this).find("h6").addClass("red").get(0).innerHTML=hovertit;
                     }
-
+                    $(this).find(".price").html("<button class='ckxq'>查看详情</button><button class='buycar'>加入购物车</button>")
+                    if($(this).find(".price").attr("data-button")==1){
+                        $(this).find(".price").find(".buycar").remove();
+                    }
+                    if($(this).find(".price").attr("data-button")==2){
+                        $(this).find(".price").find(".buycar").addClass("none").html("已告罄");
+                    }
                 },function(){
                     var tit=$(this).find("h6").attr("data-title");
+                    //var aPrice=$(this).find(".price").attr("data-aprice");
                     $(this).find("h6").removeClass("red").get(0).innerHTML=tit;
+                    $(this).find(".price").get(0).innerHTML=$(this).find(".price").attr("data-aprice");
                 });
 
             }
@@ -270,3 +278,5 @@ $(".page_right").click(function(){
 });
 var arrName=["hot","new","phone","guanfang","peijian","zhoubian","jingxuan"]
 ajaxNew(arrName);
+
+
