@@ -245,6 +245,23 @@ article .model .inner{
     border-radius: 5px;
     overflow: hidden;
 }
+
+article .s .m_con ul{
+    width: 1224px;
+}
+article .s .m_con ul li:first-of-type{
+    width: 609px;
+    height: 428px;
+}
+article .s .m_con ul li:first-of-type img{
+    width: 609px;
+    height: 428px;
+}
+article .s .m_con ul li:first-of-type:hover{
+    opacity: .8;
+    box-shadow: inset 0 0 38px rgba(0,0,0,.08);
+    transition: all .15s ease;
+}
 /*============================================模块一*/
 
 
@@ -379,8 +396,11 @@ article .model .inner{
 }
 
 .m_con ul li .h_img img {
+    display: block;
     width: 216px;
-    height: 281px;
+    height: 216px;
+    margin: 0 auto;
+    padding: 45px 0 20px;
 }
 
 .m_con ul li i {
@@ -418,55 +438,4 @@ article .model .inner{
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .05);
     color: #a06e37;
     background: #fffbdf;
-}
-/*=========================================================model_three 第三模块 新品首发*/
-.m_con .new_shop{
-    width: 1224px;
-}
-.m_con .new_shop li:first-of-type{
-    width: 609px;
-    height: 428px;
-}
-.m_con .new_shop li:first-of-type img{
-    width: 609px;
-    height: 428px;
-}
-.m_con .new_shop li:first-of-type:hover{
-    opacity: .8;
-    box-shadow: inset 0 0 38px rgba(0,0,0,.08);
-    transition: all .15s ease;
-}
-/*=========================================================model_four 第四模块  坚果手机系列*/
-.m_con .phone_shop{
-    width: 1224px;
-}
-.m_con .phone_shop li:first-of-type{
-    width: 609px;
-    height: 428px;
-}
-.m_con .phone_shop li:first-of-type img{
-    width: 609px;
-    height: 428px;
-}
-.m_con .phone_shop li:first-of-type:hover{
-    opacity: .8;
-    box-shadow: inset 0 0 38px rgba(0,0,0,.08);
-    transition: all .15s ease;
-}
-/*=========================================================model_five 第五模块  官方精选配件*/
-.m_con .guanfang_shop{
-    width: 1224px;
-}
-.m_con .guanfang_shop li:first-of-type{
-    width: 609px;
-    height: 428px;
-}
-.m_con .guanfang_shop li:first-of-type img{
-    width: 609px;
-    height: 428px;
-}
-.m_con .guanfang_shop li:first-of-type:hover{
-    opacity: .8;
-    box-shadow: inset 0 0 38px rgba(0,0,0,.08);
-    transition: all .15s ease;
 }
