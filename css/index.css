@@ -14,6 +14,8 @@ body {
     font-size: 14px;
     color: #666;
 }
+
+{
 /*
 !*========================nav_top==============================*!
 .top {
@@ -79,10 +81,11 @@ body {
 .top .top_right ul li.peo:hover {
     background-position: 1px 2px;
 }
-
-!*============================================header 第二层导航*!
+*/
+}
+/*============================================header 第二层导航*/
 header {
-    !*padding: 23px 0;*!
+    /*padding: 23px 0;*/
     height: 74px;
     position: relative;
     border-bottom: 1px solid #e1e1e1;
@@ -97,10 +100,10 @@ header > .inner {
 header nav > ul > li {
     float: left;
     cursor: pointer;
-    !*padding-right: 30px;*!
+    /*padding-right: 30px;*/
     padding: 0 15px;
-    !*position: relative;*!
-    !*height: 100%;*!
+    /*position: relative;*/
+    /*height: 100%;*/
     line-height: 74px;
 }
 
@@ -124,12 +127,12 @@ header nav ul li:hover {
     z-index: 100;
 }
 
-!*header nav ul li:hover .layer{*!
-!*display: block;*!
-!*}*!
+/*header nav ul li:hover .layer{*/
+/*display: block;*/
+/*}*/
 .layer .inner {
-    !*background: pink;*!
-    !*z-index: 99;*!
+    /*background: pink;*/
+    /*z-index: 99;*/
 }
 
 .layer .phone_box {
@@ -142,7 +145,7 @@ header nav ul li:hover {
     width: 200px;
     float: left;
     height: 100%;
-    !*background: #ccc;*!
+    /*background: #ccc;*/
     margin: 0 10px;
 }
 
@@ -155,7 +158,7 @@ header nav ul li:hover {
     opacity: .5;
     color: #000;
     font-weight: 700;
-    !*cursor: default;*!
+    /*cursor: default;*/
     height: 30px;
     line-height: 50px;
 }
@@ -166,18 +169,18 @@ header nav ul li:hover {
 }
 
 .layer .phone ul li {
-    !*vertical-align: middle;*!
+    /*vertical-align: middle;*/
     display: inline-block;
     width: 150px;
-    !*white-space: nowrap;*!
-    !*overflow: hidden;*!
-    !*text-overflow: ellipsis;*!
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
     font-weight: 700;
     color: rgba(0, 0, 0, .8);
     float: left;
     height: 40px;
     margin: 10px 10px 0 10px;
-    !*background: pink;*!
+    /*background: pink;*/
 }
 
 .layer .phone ul li img {
@@ -188,7 +191,7 @@ header nav ul li:hover {
     float: left;
 }
 
-!*=========================================article==============*!*/
+/*=========================================article==============*/
 article {
     /*height: 7000px;*/
 }

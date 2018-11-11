@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>坚果Pro 2S</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jianguopro2s.css">
+</head>
+<body>
+<div class="header">
+</div>
+<div class="header_bottom">
+    <div class="inner">
+        <div class="h_b_left fl">
+            <div class="h_b_logo fl">坚果 Pro 2S</div>
+            <ul class="clear">
+                <li class="active">概览</li>
+                <li>设计</li>
+                <li>功能</li>
+                <li>操作系统</li>
+                <li>技术规格</li>
+            </ul>
+        </div>
+        <div class="h_b_right fr">
+            <ul class="fl">
+                <li>优先购买码</li>
+                <li style="border: none;">手机回收置换计划</li>
+            </ul>
+            <button class="buy_btn">现在购买</button>
+        </div>
+    </div>
+</div>
+<article>
+    <ul>
+        <li class="white"><img src="images/top-carbonBlack@2x.d2bd45dfc65895096a0ab86313adc51f.jpg" alt=""></li>
+        <li class="blue"><img src="images/slogan-shinyBlue.808dde6755bf79942dc73e9fd304e393.jpg" alt=""></li>
+        <li class="black"><img src="images/features.fb57512a94f5365ac5e01375910b4b5d.jpg" alt=""></li>
+        <li><img src="images/os.003f9eaf5766901988f5be63204e168d.jpg" alt=""></li>
+    </ul>
+</article>
+<footer></footer>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(".header").load("header.html");
+    $("footer").load("footer.html");
+    /*    window.onscroll = function () {
+     if (scroll().top > topPart.offsetHeight) {
+     navBar.className = "nav fixed";
+     mainPart.style.paddingTop = navBar.offsetHeight + "px";
+     } else {
+     navBar.className = "nav";
+     mainPart.style.paddingTop = 0;
+     }
+     }*/
+    var blueTop = $(".header").height() + $(".header_bottom").height() + $(".white").height();
+    var blackTop = $(".header").height() + $(".header_bottom").height() + $(".white").height() + $(".blue").height();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > $(".header").height()) {
+            $(".header_bottom").addClass("fixed").find(".h_b_logo").show(500);
+            if ($(this).scrollTop() > blueTop&&$(this).scrollTop() <blackTop) {
+                $(".header_bottom").removeClass("black").addClass("blue");
+
+            } else if ($(this).scrollTop() > blackTop) {
+                $(".header_bottom").removeClass("blue").addClass("black");
+            }
+        } else if ($(this).scrollTop() < $(".header").height()) {
+            $(".header_bottom").removeClass("fixed blue black").find(".h_b_logo").hide(500);
+
+
+        }
+    })
+</script>
+</body>
+</html>
