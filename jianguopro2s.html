@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>坚果Pro 2S</title>
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jianguopro2s.css">
 </head>
 <body>
-<div class="header">
-</div>
+<div class="header"></div>
 <div class="header_bottom">
     <div class="inner">
         <div class="h_b_left fl">
@@ -43,15 +43,9 @@
 <script>
     $(".header").load("header.html");
     $("footer").load("footer.html");
-    /*    window.onscroll = function () {
-     if (scroll().top > topPart.offsetHeight) {
-     navBar.className = "nav fixed";
-     mainPart.style.paddingTop = navBar.offsetHeight + "px";
-     } else {
-     navBar.className = "nav";
-     mainPart.style.paddingTop = 0;
-     }
-     }*/
+$(".h_b_left ul li").click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+})
     var blueTop = $(".header").height() + $(".header_bottom").height() + $(".white").height();
     var blackTop = $(".header").height() + $(".header_bottom").height() + $(".white").height() + $(".blue").height();
     $(window).scroll(function () {

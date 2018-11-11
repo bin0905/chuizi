@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>坚果Pro 2S</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jianguopro2s_design.css">
+</head>
+<body>
+<div class="header"></div>
+<div class="header_bottom black">
+    <div class="inner">
+        <div class="h_b_left fl">
+            <div class="h_b_logo fl">坚果 Pro 2S</div>
+            <ul class="clear">
+                <li>概览</li>
+                <li class="active">设计</li>
+                <li>功能</li>
+                <li>操作系统</li>
+                <li>技术规格</li>
+            </ul>
+        </div>
+        <div class="h_b_right fr">
+            <ul class="fl">
+                <li>优先购买码</li>
+                <li style="border: none;">手机回收置换计划</li>
+            </ul>
+            <button class="buy_btn">现在购买</button>
+        </div>
+    </div>
+</div>
+<article>
+    <div class="banner">
+        <ul>
+            <li data-bj="black"></li>
+            <li data-bj="white"></li>
+            <li data-bj="blue"></li>
+            <li data-bj="red"></li>
+        </ul>
+    </div>
+</article>
+<footer></footer>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(".header").load("header.html");
+    $("footer").load("footer.html");
+    $(".h_b_left ul li").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+    $("article .banner ul li").click(function () {
+        $(".header .top").removeClass("red black blue white").addClass($(this).attr("data-bj"));
+        $(".header_bottom").removeClass("red black blue white").addClass($(this).attr("data-bj"));
+        $("article .banner").removeClass("red black blue white").addClass($(this).attr("data-bj"));
+    })
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > $(".header").height()) {
+            $(".header_bottom").addClass("fixed").find(".h_b_logo").show(500);
+        } else if ($(this).scrollTop() < $(".header").height()) {
+            $(".header_bottom").removeClass("fixed blue black").find(".h_b_logo").hide(500);
+        }
+    })
+</script>
+</body>
+</html>
