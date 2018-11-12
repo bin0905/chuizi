@@ -178,6 +178,7 @@ header nav ul li:hover {
     height: 40px;
     margin: 10px 10px 0 10px;
     /*background: pink;*/
+    line-height: 40px;
 }
 
 .layer .phone ul li img {

@@ -253,3 +253,10 @@ article .content .line_x img {
      transform: translateX(-50%);*/
     width: 100%;
 }
+/*================================================================dingbu*/
+.dingbu{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+}
