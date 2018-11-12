@@ -5,6 +5,7 @@
     <title>header</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
 <!--顶层导航-->
@@ -12,15 +13,15 @@
     <a href="index.html" class="logo fl"></a>
     <div class="top_cen fl">
         <ul>
-            <li class="active">在线商城</li>
-            <li>坚果Pro 2S</li>
-            <li>坚果R1</li>
-            <li>坚果 TNT 工作站</li>
-            <li>Smartisan OS</li>
-            <li>欢喜云</li>
-            <li>应用</li>
-            <li>论坛</li>
-            <li>荣誉与奖项</li>
+            <li onclick="location.href='index.html'">在线商城</li>
+            <li onclick="location.href='jianguopro2s.html'">坚果Pro 2S</li>
+            <li onclick="location.href='index.html'">坚果R1</li>
+            <li onclick="location.href='index.html'">坚果 TNT 工作站</li>
+            <li onclick="location.href='index.html'">Smartisan OS</li>
+            <li onclick="location.href='index.html'">欢喜云</li>
+            <li onclick="location.href='index.html'">应用</li>
+            <li onclick="location.href='index.html'">论坛</li>
+            <li onclick="location.href='index.html'">荣誉与奖项</li>
         </ul>
     </div>
     <div class="top_right fr">
@@ -30,7 +31,7 @@
         </ul>
     </div>
 </nav>
-<script src="js/jquery.min.js"></script>
+
 <script>
     var flag = false;
     $("header nav>ul").mouseleave(function () {
@@ -52,7 +53,9 @@
         $(".layer").slideUp(1000)
 
     });
-
+    $(".top .top_cen ul li").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    })
 </script>
 </body>
 </html>

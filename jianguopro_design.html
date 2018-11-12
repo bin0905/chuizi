@@ -39,6 +39,45 @@
             <li data-bj="red"></li>
         </ul>
     </div>
+    <div class="content">
+        <ul class="clear ul_img">
+            <li><img src="images/footprints-01@2x.8b7eee21e53a2f9883ad867f81032fdb.png" alt=""></li>
+            <li><img src="images/footprints-02@2x.06deed680f2503f4152c17f32cc0c3a2.png" alt=""></li>
+            <li><img src="images/footprints-03@2x.de44be57620dddb87d64e45f87edad60.png" alt=""></li>
+            <li><img src="images/footprints-04@2x.ca547daa3f2673a0f19e8a9e83cac8a2.png" alt=""></li>
+            <li><img src="images/footprints-05@2x.7453f847f8af61648ed1a926ab11b822.png" alt=""></li>
+        </ul>
+        <ul class="ul_txt">
+            <li>
+                <h3><span class="iconlr l"></span>薛定谔诞生 <span class="iconlr r"></span></h3>
+                <p>1935 年，欧洲物理学的黄金时代，最杰出的头脑全都聚在一起，担心一只猫。凶手是 48 岁的奥地利物理学家埃尔温·薛定谔......<a href="javascript:;">查看完整版故事 ></a></p>
+                <h5>1887.8.12</h5>
+            </li>
+            <li>
+                <h3><span class="iconlr l"></span>迈克尔·杰克逊出生 <span class="iconlr r"></span></h3>
+                <p>没人见过这种阵仗。四射的焰火中，一个身形修长的家伙被弹上舞台，内裤外穿，戴着墨镜。7 万人在他面前欢呼、尖叫和痛哭......<a href="javascript:;">查看完整版故事 ></a></p>
+                <h5>1958.8.29</h5>
+            </li>
+            <li class="active">
+                <h3><span class="iconlr l"></span>阿加莎·克里斯蒂出生 <span class="iconlr r"></span></h3>
+                <p>时间是星期天下午，最好是在冬天。妻子在沙发上睡着了，孩子在书房玩游戏。你把双脚搁到桌子上，扶了扶鼻梁上的眼镜，打开......<a href="javascript:;">查看完整版故事 ></a></p>
+                <h5>1890.9.15</h5>
+            </li>
+            <li>
+                <h3><span class="iconlr l"></span>《肖申克的救赎》在美国上映 <span class="iconlr r"></span></h3>
+                <p>你就这样被扔到一个操蛋的地方，毫无道理可言。据说是因为你犯了什么可怕的错误。但你没有。至少你认为自己没有......<a href="javascript:;">查看完整版故事 ></a></p>
+                <h5>1994.9.23</h5>
+            </li>
+            <li>
+                <h3><span class="iconlr l"></span>本初子午线设立<span class="iconlr r"></span></h3>
+                <p>一名孕妇在跨年之际乘船由西向东航行，如果在经过东经 180° 线前后分别生下一个女婴，会发什么呢？ ......<a href="javascript:;">查看完整版故事 ></a></p>
+                <h5>1884.10.13</h5>
+            </li>
+        </ul>
+        <div class="line_x">
+            <img src="images/footprints-line@2x.5472ca6f1b13b154d09abeb58f58311a.png" alt="">
+        </div>
+    </div>
 </article>
 <footer></footer>
 <script src="js/jquery.min.js"></script>
@@ -49,16 +88,57 @@
         $(this).addClass("active").siblings().removeClass("active");
     });
     $("article .banner ul li").click(function () {
+       if($(this).attr("data-bj")=="white"){
+           $(".header .top ul li").css("color","rgba(0,0,0,.4)")
+       }else {
+           $(".header .top ul li").css("color","rgba(255,255,255,.4)")
+       }
+
         $(".header .top").removeClass("red black blue white").addClass($(this).attr("data-bj"));
         $(".header_bottom").removeClass("red black blue white").addClass($(this).attr("data-bj"));
         $("article .banner").removeClass("red black blue white").addClass($(this).attr("data-bj"));
-    })
+    });
     $(window).scroll(function () {
         if ($(this).scrollTop() > $(".header").height()) {
             $(".header_bottom").addClass("fixed").find(".h_b_logo").show(500);
         } else if ($(this).scrollTop() < $(".header").height()) {
             $(".header_bottom").removeClass("fixed").find(".h_b_logo").hide(500);
         }
+    })
+
+    $(".content .ul_img li").click(function(){
+        if($(this).index()-2>0||$(this).index()-2<0){
+            $(".content .ul_img").css("left",-($(this).index()-2)*320)
+        }else if($(this).index()-2==0){
+            $(".content .ul_img").css("left","50px")
+        }
+        $(".content .ul_txt li").eq($(this).index()).addClass("active").siblings().removeClass("active");
+    })
+    var num=2;
+    $(".iconlr.l").click(function(){
+        num--;
+        if(num<0){
+            num=0
+        }
+        var img_l= $(".content .ul_img").offset().left;
+        if(img_l>290){
+            img_l=290;
+        }
+        $(".content .ul_img").css("left",img_l+320);
+        $(".content .ul_txt li").eq(num).addClass("active").siblings().removeClass("active");
+    });
+
+    $(".iconlr.r").click(function(){
+        num++;
+        if(num>4){
+            num=4
+        }
+        var img_l= $(".content .ul_img").offset().left;
+        if(img_l<-290){
+         img_l=-290;
+         }
+        $(".content .ul_img").css("left",img_l-320);
+        $(".content .ul_txt li").eq(num).addClass("active").siblings().removeClass("active");
     })
 </script>
 </body>
