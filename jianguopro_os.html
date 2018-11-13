@@ -56,49 +56,49 @@
     </div>
 </div>
 <div class="header_os">
-  <div class="inner">
-      <div class="os_logo fl">Smartisan OS</div>
-      <div class="tit_nav fl active">
-          <p>无限屏</p>
-          <ul>
-              <li><a href="javascript:;"></a></li>
-              <li><a href="javascript:;"></a></li>
-              <li><a href="javascript:;"></a></li>
-          </ul>
-      </div>
-      <div class="tit_nav fl">
-          <p>子弹短信</p>
-          <ul>
-              <li><a href="javascript:;"></a></li>
-              <li><a href="javascript:;"></a></li>
-              <li><a href="javascript:;"></a></li>
-          </ul>
-      </div>
-      <div class="tit_nav fl">
-          <p>快捷桌面</p>
-          <ul>
-              <li><a href="javascript:;"></a></li>
-              <li><a href="javascript:;"></a></li>
-              <li><a href="javascript:;"></a></li>
-          </ul>
-      </div>
-      <div class="tit_nav fl">
-          <p>Smartisan 输入法</p>
-          <ul>
-              <li><a href="javascript:;"></a></li>
-              <li><a href="javascript:;"></a></li>
-              <li><a href="javascript:;"></a></li>
-          </ul>
-      </div>
-      <div class="tit_nav fl">
-          <p>更多升级</p>
-          <ul>
-              <li><a href="javascript:;"></a></li>
-              <li><a href="javascript:;"></a></li>
-              <li><a href="javascript:;"></a></li>
-          </ul>
-      </div>
-  </div>
+    <div class="inner">
+        <div class="os_logo fl">Smartisan OS</div>
+        <div onclick="$(window).scrollTop(0)" class="tit_nav fl active">
+            <p>无限屏</p>
+            <ul>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+        </div>
+        <div onclick="$(window).scrollTop($('.os_zd').offset().top)" class="tit_nav fl">
+            <p>子弹短信</p>
+            <ul>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+        </div>
+        <div onclick="$(window).scrollTop($('.kjzm').offset().top)" class="tit_nav fl">
+            <p>快捷桌面</p>
+            <ul>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+        </div>
+        <div onclick="$(window).scrollTop($('.srf').offset().top)" class="tit_nav fl">
+            <p>Smartisan 输入法</p>
+            <ul>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+        </div>
+        <div onclick="$(window).scrollTop($('.more').offset().top)" class="tit_nav fl">
+            <p>更多升级</p>
+            <ul>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 <article>
     <ul>
@@ -106,11 +106,12 @@
             <img src="images/infinite-top@2x_01.8183d5eb261e2e30070977949a561ff4.png" alt="">
         </li>
         <li><img src="images/infinite-top@2x_02.3f1006701121044b564b547f7d123248.png" alt="">
-            <div class="video"></div></li>
-        <li><img src="images/infinite-bottom@2x.091c195b250dbda1f33befb1740870bf.jpg" alt=""></li>
+            <div class="video"></div>
+        </li>
+        <li class="white"><img src="images/infinite-bottom@2x.091c195b250dbda1f33befb1740870bf.jpg" alt=""></li>
     </ul>
-    <div class="os_zd">
-        <div class="os_zd_top">
+    <div class="os_zd clear">
+        <div class="os_zd_top osx_top">
             <div class="os_zd_logo"></div>
             <h3>子弹短信</h3>
             <p>为高效沟通而生的子弹短信，针对消息收发、工作管理以及信息备忘做了大量优化。</p>
@@ -130,18 +131,182 @@
                 </div>
             </div>
             <img src="images/bulletMsg@2x.d4e14a72ae129532d24bd550382bcddd.png" alt="">
+            <ul class="videos">
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-01@2x.dffdb11809658656a800838a0d0140fb.png" alt="">
+                        <video src="https://static.smartisanos.cn/jianguopro2s/assets/videos/bullet-01.7477c0348bf1ef88b5e45c427b79a63c.mp4"
+                               autoplay loop></video>
+                    </div>
+                    <div class="vis_text">
+                        <h3>快如子弹的消息发送速度</h3>
+                        <p>你可以将“胶囊键”设置为发送子弹短信的快捷按键，按住说话，即可自动将语音转为文字，快速选择联系人并发送。还能按住屏幕下方的麦克风按钮进行语音搜索精准找人</p>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-02@2x.305b7b3e1fa8d0115d5f6d37480ad104.png" alt="">
+                        <video src="https://static.smartisanos.cn/jianguopro2s/assets/videos/bullet-02.b027a301300abee26688a85d42694822.mp4"
+                               autoplay loop></video>
+                    </div>
+                    <div class="vis_text">
+                        <h3>语音消息自动转文字</h3>
+                        <p>有别于传统的文字消息和语音消息，子弹短信提供了一种全新的信息展现方式。你可以通过子弹短信发送语音与文字相结合的消息，偶现的错别字也能通过语音消息来补充释义，以实现 100%
+                            的准确率</p></div>
+                </li>
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-03@2x.849e5031c426187fbb3daa2553b1a36a.png" alt="">
+                        <video src="https://static.smartisanos.cn/jianguopro2s/assets/videos/bullet-01.7477c0348bf1ef88b5e45c427b79a63c.mp4"
+                               autoplay loop></video>
+                    </div>
+                    <div class="vis_text">
+                        <h3>稍后处理，聊天工作两不误</h3>
+                        <p>若在子弹短信中遇到无法立即回复的消息，你可以长按这条消息设置为稍后处理项，之后可在首页集中查看或处理此类消息</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-01@2x.dffdb11809658656a800838a0d0140fb.png" alt="">
+                        <video src="https://static.smartisanos.cn/jianguopro2s/assets/videos/bullet-01.7477c0348bf1ef88b5e45c427b79a63c.mp4"
+                               autoplay loop></video>
+                    </div>
+                    <div class="vis_text">
+                        <h3>清晰的“引用并回复”</h3>
+                        <p>长按消息内容选择“引用并回复”，实现精准清晰的回复</p></div>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="os_kjzm"></div>
-    <div class="os_srf"></div>
-    <div class="os_more"></div>
+    <div class="os_kjzm clear   kjzm">
+        <div class="os_kjzm_top osx_top">
+            <div class="os_kjzm_logo"></div>
+            <h3>快捷桌面</h3>
+            <p>精准的高品质阅读、清晰的生活信息呈现</p>
+        </div>
+        <div class="os_k_content">
+            <ul>
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-01@2x.dffdb11809658656a800838a0d0140fb.png" alt="">
+                    </div>
+                    <div class="vis_text">
+                        <h3>快如子弹的消息发送速度</h3>
+                        <p>你可以将“胶囊键”设置为发送子弹短信的快捷按键，按住说话，即可自动将语音转为文字，快速选择联系人并发送。还能按住屏幕下方的麦克风按钮进行语音搜索精准找人</p>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-02@2x.305b7b3e1fa8d0115d5f6d37480ad104.png" alt="">
+                    </div>
+                    <div class="vis_text">
+                        <h3>语音消息自动转文字</h3>
+                        <p>有别于传统的文字消息和语音消息，子弹短信提供了一种全新的信息展现方式。你可以通过子弹短信发送语音与文字相结合的消息，偶现的错别字也能通过语音消息来补充释义，以实现 100%
+                            的准确率</p></div>
+                </li>
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-03@2x.849e5031c426187fbb3daa2553b1a36a.png" alt="">
+                    </div>
+                    <div class="vis_text">
+                        <h3>稍后处理，聊天工作两不误</h3>
+                        <p>若在子弹短信中遇到无法立即回复的消息，你可以长按这条消息设置为稍后处理项，之后可在首页集中查看或处理此类消息</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="os_kjzm clear srf">
+        <div class="os_kjzm_top osx_top">
+            <div class="os_kjzm_logo"></div>
+            <h3>Smartisan 输入法</h3>
+            <p>将或许是最好的中文字库和准确率高达 97% 的语音输入法合二为一，快捷短语和剪切板触手可及</p>
+        </div>
+        <div class="os_k_content">
+            <ul>
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-01@2x.dffdb11809658656a800838a0d0140fb.png" alt="">
+                    </div>
+                    <div class="vis_text">
+                        <h3>快如子弹的消息发送速度</h3>
+                        <p>你可以将“胶囊键”设置为发送子弹短信的快捷按键，按住说话，即可自动将语音转为文字，快速选择联系人并发送。还能按住屏幕下方的麦克风按钮进行语音搜索精准找人</p>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-02@2x.305b7b3e1fa8d0115d5f6d37480ad104.png" alt="">
+                    </div>
+                    <div class="vis_text">
+                        <h3>语音消息自动转文字</h3>
+                        <p>有别于传统的文字消息和语音消息，子弹短信提供了一种全新的信息展现方式。你可以通过子弹短信发送语音与文字相结合的消息，偶现的错别字也能通过语音消息来补充释义，以实现 100%
+                            的准确率</p></div>
+                </li>
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-03@2x.849e5031c426187fbb3daa2553b1a36a.png" alt="">
+                    </div>
+                    <div class="vis_text">
+                        <h3>稍后处理，聊天工作两不误</h3>
+                        <p>若在子弹短信中遇到无法立即回复的消息，你可以长按这条消息设置为稍后处理项，之后可在首页集中查看或处理此类消息</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="os_kjzm clear more">
+        <div class="os_kjzm_top osx_top">
+            <div class="os_kjzm_logo "></div>
+            <h3>更多升级</h3>
+            <p>Smartisan OS 6.6.5 不仅完成了诸多重要的功能性升级，还带来了更多的人性化体验。</p>
+            <p>你将在系统各处享受前所未有的效率提升与美妙动人的细节优化</p>
+        </div>
+        <div class="os_k_content">
+            <ul>
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-01@2x.dffdb11809658656a800838a0d0140fb.png" alt="">
+                    </div>
+                    <div class="vis_text">
+                        <h3>快如子弹的消息发送速度</h3>
+                        <p>你可以将“胶囊键”设置为发送子弹短信的快捷按键，按住说话，即可自动将语音转为文字，快速选择联系人并发送。还能按住屏幕下方的麦克风按钮进行语音搜索精准找人</p>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-02@2x.305b7b3e1fa8d0115d5f6d37480ad104.png" alt="">
+                    </div>
+                    <div class="vis_text">
+                        <h3>语音消息自动转文字</h3>
+                        <p>有别于传统的文字消息和语音消息，子弹短信提供了一种全新的信息展现方式。你可以通过子弹短信发送语音与文字相结合的消息，偶现的错别字也能通过语音消息来补充释义，以实现 100%
+                            的准确率</p></div>
+                </li>
+                <li>
+                    <div class="vis_vis">
+                        <img src="images/bullet-03@2x.849e5031c426187fbb3daa2553b1a36a.png" alt="">
+                    </div>
+                    <div class="vis_text">
+                        <h3>稍后处理，聊天工作两不误</h3>
+                        <p>若在子弹短信中遇到无法立即回复的消息，你可以长按这条消息设置为稍后处理项，之后可在首页集中查看或处理此类消息</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </article>
 <footer></footer>
 <div class="dingbu">
     <img src="images/arrow_up.e06a918c6b2be8e0617dbaa8675c3e02.png" alt="">
 </div>
 <div class="vedio">
-    <video></video>
+    <video src="https://static.smartisanos.cn/common/video/production/ocean/os-1-1710.mp4" type="video/mp4" loop
+           muted></video>
+
+    <a href="javascript:;">×</a>
 </div>
 <script>
     $("footer").load("footer.html");
@@ -154,28 +319,53 @@
             $(".header_os").removeClass("fixed");
 
         }
-        if($(this).scrollTop()>1000){
+        if ($(this).scrollTop() > 1000) {
             $(".dingbu").slideDown(1000);
-        }else {
+        } else {
             $(".dingbu").slideUp(1000);
         }
+        if ($(this).scrollTop() <= $(".white").offset().top) {
+            $(".header_os").css({
+                "background": "#39406e",
+                "color": "#ccc"
+            })
+            $(".header_bottom").removeClass(" red black  white").addClass("blue")
+        }
+        if ($(this).scrollTop() > $(".white").offset().top) {
+            $(".header_os").css({
+                "background": "#f9f9f9",
+                "color": "#444"
+            })
+            $(".header_bottom").removeClass("blue red black").addClass("white")
+        }
+
     })
     var timer = null;
     var target = 0; //目标位置
-    var leader=0;
-    $(".dingbu").click(function(){
+    var leader = 0;
+    $(".dingbu").click(function () {
         leader = $(window).scrollTop() //显示区域自身的位置
         clearInterval(timer);
         timer = setInterval(function () {
-            var step = (target-leader)/10;
-            step = step>0?Math.ceil(step):Math.floor(step);
-            leader = leader +step;
-            window.scrollTo(0,leader);
-            if(leader === 0){
+            var step = (target - leader) / 10;
+            step = step > 0 ? Math.ceil(step) : Math.floor(step);
+            leader = leader + step;
+            window.scrollTo(0, leader);
+            if (leader === 0) {
                 clearInterval(timer);
             }
-        },25);
+        }, 25);
     })
+
+
+    $(".video").click(function () {
+        $(".vedio").show().find("video").get(0).play();
+    })
+    $(".vedio a").click(function () {
+        $(".vedio").hide().find("video").get(0).pause();
+        $("video").get(0).currentTime = 0;
+    })
+
 </script>
 </body>
 </html>

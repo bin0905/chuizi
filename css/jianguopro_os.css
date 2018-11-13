@@ -106,16 +106,19 @@
     pointer-events: auto;
     z-index: 20;
     transition: opacity .24s cubic-bezier(.25, .46, .45, .94) .24s;
-    /*border-top: 1px solid #eee;*/
+    border-bottom: 1px solid #eee;
     color: #ccc;
-    background: rgb(0,0,0);
+    background: #39406e;
+
 }
-.header_os.fixed{
+
+.header_os.fixed {
     position: fixed;
     left: 0;
     right: 0;
     top: 49px;
 }
+
 .header_os .os_logo {
     text-align: left;
     font-size: 14px;
@@ -128,30 +131,36 @@
     letter-spacing: 1px;
     font-weight: 300;
 }
-.tit_nav{
+
+.tit_nav {
     margin-left: 20px;
     cursor: pointer;
 }
-.tit_nav p{
+
+.tit_nav p {
     height: 40px;
     line-height: 40px;
-    color: #fff;
+    /*color: #fff;*/
     font-size: 14px;
     float: left;
 }
-.tit_nav.active{
+
+.tit_nav.active {
     font-weight: 700;
 }
-.tit_nav ul{
+
+.tit_nav ul {
     float: left;
     margin-left: 5px;
 }
+
 .tit_nav ul li {
     width: 4px;
     height: 40px;
     float: left;
     margin: 18px 3px;
 }
+
 .tit_nav ul li a {
     width: 4px;
     height: 4px;
@@ -160,22 +169,26 @@
     background: #fff;
 
 }
+
 /*===============================article*/
 article {
     position: relative;
     top: -38px;
     overflow: hidden;
-    height: 10000px;
+    height: 11200px;
     width: 100%;
 }
-article ul {
+
+article > ul {
     position: relative;
-    top:0;
+    top: 0;
 }
-article ul li{
-position: relative;
+
+article > ul > li {
+    position: relative;
 }
-article ul li .video{
+
+article > ul > li .video {
     position: absolute;
     top: 0;
     left: 50%;
@@ -185,10 +198,12 @@ article ul li .video{
     background: transparent;
     border-radius: 5px;
 }
-article ul li:first-of-type img{
+
+article > ul > li:first-of-type img {
     height: 392px;
 }
-article ul li img{
+
+article > ul > li img {
     height: 1850px;
     display: block;
     position: relative;
@@ -196,41 +211,48 @@ article ul li img{
     transform: translateX(-50%);
 }
 
-article .os_zd{
+article .os_zd {
     padding: 100px 0 0;
     width: 100%;
     /*background: pink;*/
-    border-top: 1px solid #ccc ;
+    border-top: 1px solid #ccc;
 }
-.os_zd .os_zd_logo{
+
+.os_zd_logo {
     background: url("../images/bullet-logo.585f47d36f7806a2b0beab4ca15ca7a1.png") no-repeat;
     width: 126px;
     height: 126px;
     margin: 0 auto;
     background-size: contain;
 }
-.os_zd .os_zd_top{
+
+.os_zd .os_zd_top {
     text-align: center;
 }
-.os_zd .os_zd_top h3{
-    font-family: EnglishBold,FZYouHJWCu;
+
+.osx_top h3 {
+    font-family: EnglishBold, FZYouHJWCu;
     font-size: 48px;
     color: #323232;
     margin: 50px 0 40px;
 }
-.os_zd .os_zd_top p{
+
+.osx_top p {
     color: #999;
     line-height: 36px;
     font-size: 18px;
     font-weight: 300;
 }
-.os_zd_bot{
+
+.os_zd_bot {
     margin-top: 20px;
 }
-.os_zd_bot .io{
+
+.os_zd_bot .io {
     text-align: center;
 }
-.os_zd_bot .io>div{
+
+.os_zd_bot .io > div {
     display: inline-block;
     width: 150px;
     box-sizing: border-box;
@@ -245,17 +267,20 @@ article .os_zd{
     border-radius: 7px;
     margin-left: 40px;
 }
-.os_zd_bot .io .code{
+
+.os_zd_bot .io .code {
     background: url("../images/qr.e8978b0d548b70e51a421e0a6776be2c.jpg") no-repeat;
     width: 50px;
     border: none;
-    background-size:cover ;
+    background-size: cover;
     position: relative;
 }
-.os_zd_bot .io .code:hover .code_big{
+
+.os_zd_bot .io .code:hover .code_big {
     display: block;
 }
-.os_zd_bot .io .code .code_big:before{
+
+.os_zd_bot .io .code .code_big:before {
     content: " ";
     width: 0;
     height: 0;
@@ -268,7 +293,8 @@ article .os_zd{
     left: 80px;
     background-image: none;
 }
-.os_zd_bot .io .code .code_big{
+
+.os_zd_bot .io .code .code_big {
     display: none;
     top: 75px;
     position: absolute;
@@ -282,28 +308,141 @@ article .os_zd{
     border-radius: 8px;
     background-color: #fff;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,.2), inset 0 0 1px rgba(0,0,0,.04);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2), inset 0 0 1px rgba(0, 0, 0, .04);
 }
-.code_big .code_img{
+
+.code_big .code_img {
     width: 110px;
     height: 110px;
     padding: 5px;
     margin: -5px auto auto;
     border-radius: 3px;
-    box-shadow: inset 0 0 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, .1);
 }
-.code_big .code_img img{
+
+.code_big .code_img img {
     width: 110px;
 }
-.os_zd_bot>img{
+
+.os_zd_bot > img {
     margin: 100px auto auto;
     display: block;
     width: 1306px;
 }
+
+.videos {
+    width: 950px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.videos li {
+    float: left;
+}
+
+ .vis_vis {
+    position: relative;
+    width: 443px;
+    height: 750px;
+    /*background: pink;*/
+    /*float: left;*/
+    margin: 15px;
+    background: url("../images/phoneFrame.a6aef06e0bba7084f936bbbcce896e1f.png") no-repeat;
+    background-size: cover;
+}
+
+.videos li img {
+    width: 301px;
+    margin: 94px 0 0 71px;
+}
+
+.videos li video {
+    position: absolute;
+    width: 301px;
+    left: 71px;
+    top: 94px;
+    z-index: 10;
+}
+
+ .vis_text {
+    width: 425px;
+}
+
+ .vis_text h3 {
+    font-size: 18px;
+    margin: 0 0 20px;
+    text-align: center;
+    color: #323232;
+    padding-left: 18px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+ .vis_text p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 35px 0 58px;
+    box-sizing: border-box;
+    color: #999;
+    font-weight: 300;
+}
+
+.os_kjzm {
+    padding: 100px 0 0;
+    width: 100%;
+    /*background: pink;*/
+    border-top: 1px solid #ccc;
+}
+
+.os_kjzm_top {
+    text-align: center;
+}
+
+.os_kjzm_top .os_kjzm_logo {
+    width: 126px;
+    height: 126px;
+    background: url("../images/fast-desktop.b705cd253fbc6b3c0f04792f1b6af265.png") no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.os_k_content ul li {
+    float: left;
+
+}
+
+.os_k_content ul li img {
+    width: 301px;
+    margin: 94px 0 0 71px;
+}
+
+
 /*================================================================dingbu*/
-.dingbu{
+.dingbu {
     position: fixed;
     right: 50px;
     bottom: 50px;
     display: none;
+}
+
+/*=========================================================================video*/
+.vedio {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.vedio video {
+    width: 1000px;
+}
+
+.vedio a {
+    font-size: 60px;
+    position: absolute;
+    right: -100px;
+    top: 0;;
+    color: white;
 }
