@@ -1,0 +1,309 @@
+.header .top.black {
+    background: url("../images/bg-carbonblack@2x.f1591cd29b76e00890bdb49ac96409c6.png");
+}
+
+.header .top.white {
+    background: url("../images/bjwhite.png");
+    color: rgba(0, 0, 0, .4);
+}
+
+.header .top.blue {
+    background: url("../images/bg-shinyblue@2x.7f23cb5e5f3802fc103f410c9d308fdf.png");
+}
+
+.header .top.red {
+    background: url("../images/bg-shinyred@2x.3fb6a9416c2fb5968464721459a845b5.png");
+}
+
+.header_bottom {
+    height: 50px;
+    width: 100%;
+    color: rgba(0, 0, 0, .4);
+    background: url("../images/bjnav.png");
+    overflow: hidden;
+}
+
+.header_bottom.white {
+    background: url("../images/bjnav.png");
+}
+
+.header_bottom.blue {
+    background: url("../images/bg-sub-shinyblue@2x.21fc34fdec6a90573fb8130b5aafed9c.png");
+    color: white;
+}
+
+.header_bottom.black {
+    background: url("../images/bg-sub-carbonblack@2x.9f6dd88ad362f143afe59cb04e4b1442.png");
+    color: white
+}
+
+.header_bottom.red {
+    background: url("../images/bg-sub-shinyred@2x.dbe13be7429ef3065f9a649b7917f567.png");
+    color: white
+}
+
+.header_bottom.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.header_bottom .h_b_right {
+    margin: 6px 0 0 0;
+}
+
+.header_bottom .h_b_left .h_b_logo {
+    font-size: 20px;
+    line-height: 50px;
+    margin-right: 50px;
+    display: none;
+}
+
+.header_bottom .h_b_left ul {
+    width: 700px;
+}
+
+.header_bottom .h_b_left ul li {
+    float: left;
+    font-size: 12px;
+    padding: 4px 15px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.header_bottom .h_b_left ul li.active {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.header_bottom .h_b_right ul li {
+    float: left;
+    font-size: 12px;
+    padding: 0 15px;
+    margin: 10px 0;
+    border-right: 1px solid rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+.header_bottom .h_b_right .buy_btn {
+    text-align: center;
+    color: #fff;
+    width: 92px;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    background: url("../images/button-light-normal@2x.811cba57b1bf6a7f3bfab08328776000.png") no-repeat;
+    background-size: contain;
+    font-size: 12px;
+}
+
+/*========================================header_os*/
+.header_os {
+    height: 38px;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 20;
+    transition: opacity .24s cubic-bezier(.25, .46, .45, .94) .24s;
+    /*border-top: 1px solid #eee;*/
+    color: #ccc;
+    background: rgb(0,0,0);
+}
+.header_os.fixed{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 49px;
+}
+.header_os .os_logo {
+    text-align: left;
+    font-size: 14px;
+    color: #9093a7;
+    text-overflow: clip;
+    height: 40px;
+    margin: 6px 90px 0 0;
+    float: left;
+    line-height: 2.2;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.tit_nav{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.tit_nav p{
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+}
+.tit_nav.active{
+    font-weight: 700;
+}
+.tit_nav ul{
+    float: left;
+    margin-left: 5px;
+}
+.tit_nav ul li {
+    width: 4px;
+    height: 40px;
+    float: left;
+    margin: 18px 3px;
+}
+.tit_nav ul li a {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    display: block;
+    background: #fff;
+
+}
+/*===============================article*/
+article {
+    position: relative;
+    top: -38px;
+    overflow: hidden;
+    height: 10000px;
+    width: 100%;
+}
+article ul {
+    position: relative;
+    top:0;
+}
+article ul li{
+position: relative;
+}
+article ul li .video{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 139px;
+    height: 44px;
+    background: transparent;
+    border-radius: 5px;
+}
+article ul li:first-of-type img{
+    height: 392px;
+}
+article ul li img{
+    height: 1850px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+article .os_zd{
+    padding: 100px 0 0;
+    width: 100%;
+    /*background: pink;*/
+    border-top: 1px solid #ccc ;
+}
+.os_zd .os_zd_logo{
+    background: url("../images/bullet-logo.585f47d36f7806a2b0beab4ca15ca7a1.png") no-repeat;
+    width: 126px;
+    height: 126px;
+    margin: 0 auto;
+    background-size: contain;
+}
+.os_zd .os_zd_top{
+    text-align: center;
+}
+.os_zd .os_zd_top h3{
+    font-family: EnglishBold,FZYouHJWCu;
+    font-size: 48px;
+    color: #323232;
+    margin: 50px 0 40px;
+}
+.os_zd .os_zd_top p{
+    color: #999;
+    line-height: 36px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.os_zd_bot{
+    margin-top: 20px;
+}
+.os_zd_bot .io{
+    text-align: center;
+}
+.os_zd_bot .io>div{
+    display: inline-block;
+    width: 150px;
+    box-sizing: border-box;
+    color: #626262;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 7px;
+    margin-left: 40px;
+}
+.os_zd_bot .io .code{
+    background: url("../images/qr.e8978b0d548b70e51a421e0a6776be2c.jpg") no-repeat;
+    width: 50px;
+    border: none;
+    background-size:cover ;
+    position: relative;
+}
+.os_zd_bot .io .code:hover .code_big{
+    display: block;
+}
+.os_zd_bot .io .code .code_big:before{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-width: 0 11px 12px;
+    border-style: solid;
+    border-color: transparent transparent #d8d7d8;
+    margin: 0;
+    position: absolute;
+    top: -12px;
+    left: 80px;
+    background-image: none;
+}
+.os_zd_bot .io .code .code_big{
+    display: none;
+    top: 75px;
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    z-index: 10;
+    width: 181px;
+    height: 160px;
+    padding: 20px 0;
+    border: 1px solid #d8d7d8;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2), inset 0 0 1px rgba(0,0,0,.04);
+}
+.code_big .code_img{
+    width: 110px;
+    height: 110px;
+    padding: 5px;
+    margin: -5px auto auto;
+    border-radius: 3px;
+    box-shadow: inset 0 0 2px rgba(0,0,0,.1);
+}
+.code_big .code_img img{
+    width: 110px;
+}
+.os_zd_bot>img{
+    margin: 100px auto auto;
+    display: block;
+    width: 1306px;
+}
+/*================================================================dingbu*/
+.dingbu{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+}
