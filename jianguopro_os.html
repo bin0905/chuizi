@@ -66,7 +66,7 @@
                 <li><a href="javascript:;"></a></li>
             </ul>
         </div>
-        <div onclick="$(window).scrollTop($('.os_zd').offset().top)" class="tit_nav fl">
+        <div onclick="$(window).scrollTop($('.os_zd').offset().top+50)" class="tit_nav nav_zd fl">
             <p>子弹短信</p>
             <ul>
                 <li><a href="javascript:;"></a></li>
@@ -74,7 +74,7 @@
                 <li><a href="javascript:;"></a></li>
             </ul>
         </div>
-        <div onclick="$(window).scrollTop($('.kjzm').offset().top)" class="tit_nav fl">
+        <div onclick="$(window).scrollTop($('.kjzm').offset().top+50)" class="tit_nav nav_kjzm fl">
             <p>快捷桌面</p>
             <ul>
                 <li><a href="javascript:;"></a></li>
@@ -82,7 +82,7 @@
                 <li><a href="javascript:;"></a></li>
             </ul>
         </div>
-        <div onclick="$(window).scrollTop($('.srf').offset().top)" class="tit_nav fl">
+        <div onclick="$(window).scrollTop($('.srf').offset().top+50)" class="tit_nav nav_srf fl">
             <p>Smartisan 输入法</p>
             <ul>
                 <li><a href="javascript:;"></a></li>
@@ -90,7 +90,7 @@
                 <li><a href="javascript:;"></a></li>
             </ul>
         </div>
-        <div onclick="$(window).scrollTop($('.more').offset().top)" class="tit_nav fl">
+        <div onclick="$(window).scrollTop($('.more').offset().top+50)" class="tit_nav nav_more fl">
             <p>更多升级</p>
             <ul>
                 <li><a href="javascript:;"></a></li>
@@ -307,7 +307,7 @@
            muted></video>
 
     <a href="javascript:;">×</a>
-</div>
+</div>+50
 <script>
     $("footer").load("footer.html");
     $(window).scroll(function () {
@@ -328,7 +328,8 @@
             $(".header_os").css({
                 "background": "#39406e",
                 "color": "#ccc"
-            })
+            });
+            $(".tit_nav ul li a").removeClass("active");
             $(".header_bottom").removeClass(" red black  white").addClass("blue")
         }
         if ($(this).scrollTop() > $(".white").offset().top) {
@@ -336,9 +337,20 @@
                 "background": "#f9f9f9",
                 "color": "#444"
             })
-            $(".header_bottom").removeClass("blue red black").addClass("white")
+            $(".header_bottom").removeClass("blue red black").addClass("white");
+            $(".tit_nav ul li a").addClass("active");
         }
-
+        if ($(this).scrollTop()>=$(".more").offset().top) {
+            $(".nav_more").addClass("active").siblings().removeClass("active");
+        }else  if ($(this).scrollTop()>=$(".srf").offset().top) {
+            $(".nav_srf").addClass("active").siblings().removeClass("active");
+        }else  if ($(this).scrollTop()>=$(".kjzm").offset().top) {
+            $(".nav_kjzm").addClass("active").siblings().removeClass("active");
+        }else  if ($(this).scrollTop()>=$(".os_zd").offset().top) {
+            $(".nav_zd").addClass("active").siblings().removeClass("active");
+        }else {
+            $(".tit_nav:first-of-type").addClass("active").siblings().removeClass("active");
+        }
     })
     var timer = null;
     var target = 0; //目标位置
@@ -365,7 +377,9 @@
         $(".vedio").hide().find("video").get(0).pause();
         $("video").get(0).currentTime = 0;
     })
-
+    $(".tit_nav").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+    })
 </script>
 </body>
 </html>
