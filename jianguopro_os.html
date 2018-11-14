@@ -311,6 +311,14 @@
 <script>
     $("footer").load("footer.html");
     $(window).scroll(function () {
+        if($(this).scrollTop()==0){
+            $(".header_os").hide();
+            $("article").css("top","0")
+        }else {
+            $(".header_os").show();
+            $("article").css("top","-38px")
+
+        }
         if ($(this).scrollTop() > $(".header").height()) {
             $(".header_bottom").addClass("fixed").find(".h_b_logo").show(500);
             $(".header_os").addClass("fixed");
@@ -363,7 +371,7 @@
             step = step > 0 ? Math.ceil(step) : Math.floor(step);
             leader = leader + step;
             window.scrollTo(0, leader);
-            if (leader === 0) {
+            if (leader <= 0) {
                 clearInterval(timer);
             }
         }, 25);

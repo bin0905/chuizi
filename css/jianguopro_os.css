@@ -106,10 +106,10 @@
     pointer-events: auto;
     z-index: 20;
     transition: opacity .24s cubic-bezier(.25, .46, .45, .94) .24s;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ccc;
     color: #ccc;
     background: #39406e;
-
+    display: none;
 }
 
 .header_os.fixed {
@@ -176,7 +176,8 @@
 /*===============================article*/
 article {
     position: relative;
-    top: -38px;
+    top: 0;
+    /*top: -38px;*/
     overflow: hidden;
     height: 11200px;
     width: 100%;

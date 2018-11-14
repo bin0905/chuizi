@@ -210,7 +210,7 @@
             step = step>0?Math.ceil(step):Math.floor(step);
             leader = leader +step;
             window.scrollTo(0,leader);
-            if(leader === 0){
+            if(leader <= 0){
                 clearInterval(timer);
             }
         },25);

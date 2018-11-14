@@ -98,7 +98,7 @@ article .ban_index ul li{
     margin: 10px;
 }
 article .ban_index ul li.active{
-    background: rgba(255,255,255,1);
+    background: rgba(255,0,0,.3);
 }
 .content{
     margin-top: 100px;
@@ -230,5 +230,36 @@ article .ban_index ul li.active{
 .mo_con ul li .icon.lt {
     background-position: -375px 0;
 }
-
+.mo_con>ul>li:last-of-type{
+    padding-top: 140px;
+    padding-left: 140px;
+    /*width: 50%;*/
+    width: 610px;
+    text-align: left;
+}
+.mo_con>ul>li:last-of-type .m_text{
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+.m_text h4{
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #999;
+}
+.m_text p{
+    color: #bdbdbd;
+    font-size: 12px;
+    line-height: 2;
+}
 /*=======================================footer*/
+
+/*================================================================dingbu*/
+.dingbu{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+}
