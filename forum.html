@@ -44,11 +44,35 @@
                 <li></li>
             </ul>
         </div>
-        <div class="content">
+        <div class="content clear">
             <div class="con_left fl">
                 <!--精品资讯-->
                 <div class="model_jingpin">
                     <h4 class="title">精品资讯 <span class="btn-"></span></h4>
+                    <div class="mo_con">
+                        <ul class="jp">
+                          <!--  <li>
+                                <h2 class="tit">TNT 大屏幕操作系统众测用户招募（坚果 R1 & Pro 2S)</h2>
+                                <div class="txt">
+                                    <div class="txt_left fl">
+                                        <div class="name fl">锤子科技</div>
+                                        <div class="time fl">发表于 2018-10-31 15:55:10</div>
+                                    </div>
+                                    <div class="txt_right fr">
+                                        <i class="review">901</i>
+                                        <i class="browse">81691</i>
+                                    </div>
+                                </div>
+
+                                <div class="li_img">
+                                    <img src="http://bbs-static.smartisan.cn/data/attachment/web/news/images/15412388304273.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p class="describe">为了配合 Smartisan TNT 大屏幕操作系统升级需要，现招募一批众测用户。<a href="javascripr:;">查看全文</a></p>
+                                </div>
+                            </li>-->
+                        </ul>
+                    </div>
                     <div class="more_jp">
                         <a href="javascript:;">查看更多资讯</a>
                     </div>
@@ -57,6 +81,33 @@
                 <!--热门推荐-->
                 <div class="model_hottj  plate">
                     <h4 class="title">热门推荐 <span class="btn-"></span></h4>
+                    <div class="mo_con">
+                        <ul class="hottj clear">
+                            <li>
+                                <div class="li_logo fl">
+                                    <img src="http://bbs-static.smartisan.cn/uc_server/data/avatar/000/00/00/50_avatar_middle.jpg" alt="">
+                                    <div class="li_logo_logo">
+                                        <img src="http://bbs-static.smartisan.cn/uc_server/data/avatar/000/00/00/50_avatar_middle.jpg" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="li_right fl">
+                                   <h5>超大加湿量究竟有多重要？一张图看懂畅呼吸加湿器</h5>
+                                    <div class="txt">
+                                        <div class="txt_left fl">
+                                            <div class="name fl">锤子科技</div>
+                                            <div class="time fl">发表于 2018-10-31 15:55:10</div>
+                                        </div>
+                                        <div class="txt_right fr">
+                                            <i class="review">901</i>
+                                            <i class="browse">81691</i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -99,6 +150,88 @@
 <footer style="border: none"></footer>
 <script>
     $("footer").load("footer.html");
+
+
+    $.ajax({
+        url: "https://www.easy-mock.com/mock/5be14891eeee54220716c03f/data/jingpinzx",
+//            url:"json.txt",
+        type: "get", /*get/post*/
+        data: {
+            //往后台传送数据   jsonp
+        },
+        async: false,
+        dataType: "json",
+        //timeout: "10000",
+    }).done(function (result) {
+        var data = result.data;
+        for (var i = 0; i < data.length; i++) {
+            $(".jp").append(
+                    `
+                       <li title="${data[i].title}">
+                                <h2 class="tit">${data[i].title}</h2>
+                                <div class="txt">
+                                    <div class="txt_left fl">
+                                        <div class="name fl">${data[i].name}</div>
+                                        <div class="time fl">${data[i].time}</div>
+                                    </div>
+                                    <div class="txt_right fr">
+                                        <i class="review">${data[i].review}</i>
+                                        <i class="browse">${data[i].browse}</i>
+                                    </div>
+                                </div>
+
+                                <div class="li_img">
+                                    <img src="${data[i].images}" alt="">
+                                </div>
+                                <div class="text">
+                                    <p class="describe">${data[i].describe}<a href="javascripr:;">查看全文</a></p>
+                                </div>
+                            </li>
+                    `
+            )
+
+        }
+    });
+    $.ajax({
+        url: "https://www.easy-mock.com/mock/5be14891eeee54220716c03f/data/hottj",
+//            url:"json.txt",
+        type: "get", /*get/post*/
+        data: {
+            //往后台传送数据   jsonp
+        },
+        async: false,
+        dataType: "json",
+        //timeout: "10000",
+    }).done(function (result) {
+        var data = result.data;
+        for (var i = 0; i < data.length; i++) {
+            $(".hottj").append(
+                    ` <li title="${data[i].title}">
+                                <div class="li_logo fl">
+                                    <img src="${data[i].images}" alt="">
+                                    <div class="li_logo_logo">
+                                    <img src="${data[i].images}" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="li_right fl">
+                                   <h5>${data[i].title}</h5>
+                                   <div class="txt">
+                                    <div class="txt_left fl">
+                                        <div class="name fl">${data[i].name}</div>
+                                        <div class="time fl">${data[i].time}</div>
+                                    </div>
+                                    <div class="txt_right fr">
+                                        <i class="review">${data[i].review}</i>
+                                        <i class="browse">${data[i].browse}</i>
+                                    </div>
+                                </div>
+                                </div>
+                            </li>`
+            )
+
+        }
+    });
 </script>
 </body>
 </html>

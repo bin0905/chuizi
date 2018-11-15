@@ -13,7 +13,7 @@ article .inner {
 }
 
 article {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .banner {
@@ -48,7 +48,7 @@ article {
 article .content {
     width: 100%;
     margin-top: 50px;
-    height: 1000px;
+    min-height: 1000px;
 }
 
 .content .con_left {
@@ -174,4 +174,112 @@ h4 .btn- {
 }
 .model_qd .qd_box .qd_button:hover{
     opacity: .8;
+}
+
+
+/*精品资讯*/
+.mo_con .jp li{
+    padding-top: 28px;
+    border-top: 1px solid #CCC;
+    margin: 0 30px 30px;
+}
+.mo_con .jp li .tit{
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+.mo_con  .txt{
+    height: 15px;
+    font-size: 12px;
+    color: #8c8c8c;
+    padding: 17px 0;
+    margin: 0;
+    line-height: 16px;
+}
+.mo_con  .txt .name{
+    padding-right: 10px;
+    background: url(../images/split.png) right -25px no-repeat;
+    float: left;
+}
+.mo_con  .txt .name{
+    color: #B2B2B2;
+    padding-left: 10px;
+    float: left;
+}
+.mo_con  .txt .browse{
+    text-align: right;
+    background: url(../images/browse.png) left center no-repeat;
+    padding-left: 33px;
+    margin-right: 20px;
+    float: right;
+}
+.mo_con  .txt .review{
+    text-align: right;
+    background: url(http://bbs-static.smartisan.cn/template/smartisan/src/img/review.png) left center no-repeat;
+    padding-left: 30px;
+    float: right;
+}
+.mo_con .jp li .li_img img{
+    width: 724px;
+    height: 300px;
+    border-radius: 5px;
+}
+.mo_con .jp li .describe{
+    margin: 16px 0 0;
+    font-size: 14px;
+    color: #737373;
+    line-height: 200%;
+}
+.mo_con .jp li .describe a{
+    background: url(http://bbs-static.smartisan.cn/template/smartisan/src/img/full-text.png) right -2px no-repeat;
+    padding-right: 16px;
+    margin-left: 16px;
+    color: #cc3e39;
+}
+/*================================热门推荐*/
+.hottj li:first-of-type{
+    padding-top: 28px;
+    border: none;
+}
+.hottj li{
+    height: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #EEE;
+    margin: 0 30px 20px
+}
+.hottj li .li_logo{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.hottj li.li_logo_logo{
+
+}
+.hottj li .li_logo>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.hottj li .li_logo_logo{
+    position: absolute;
+    right: -3px;
+    bottom: -5px;
+}
+.hottj li .li_logo_logo img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.hottj li .li_right{
+    height: 47px;
+    width: 656px;
+    margin-left: 19px;
+}
+.hottj li .li_right h5{
+    color: #737373;
+    font-size: 16px;
+    font-weight: 400;
+
 }
