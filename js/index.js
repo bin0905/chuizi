@@ -1,6 +1,7 @@
 /**
  * Created by Bin on 2018/11/5.
  */
+$("footer").load("footer.html")
 var flag = false;
 $("header nav>ul").mouseleave(function () {
     flag = false;
