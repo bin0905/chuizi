@@ -227,7 +227,7 @@ $(".tit li").click(function () {
 function ajaxNew(arr) {
     for (var y = 0; y < arr.length; y++) {
         $.ajax({
-            url: "https://www.easy-mock.com/mock/5be14891eeee54220716c03f/data/" + arr[y],
+            url: "https://www.easy-mock.com/mock/5beeb07628fc7826b7f1a663/smartisan/" + arr[y],
 //            url:"json.txt",
             type: "get", /*get/post*/
             data: {

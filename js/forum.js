@@ -100,7 +100,7 @@ $(".pa a").click(function(){
 
 });
 $.ajax({
-    url: "https://www.easy-mock.com/mock/5be14891eeee54220716c03f/data/jingpinzx",
+    url: "https://www.easy-mock.com/mock/5beeb07628fc7826b7f1a663/smartisan/jingpinzx",
 //            url:"json.txt",
     type: "get", /*get/post*/
     data: {
@@ -140,7 +140,7 @@ $.ajax({
     }
 });
 $.ajax({
-    url: "https://www.easy-mock.com/mock/5be14891eeee54220716c03f/data/hottj",
+    url: "https://www.easy-mock.com/mock/5beeb07628fc7826b7f1a663/smartisan/hottj",
 //            url:"json.txt",
     type: "get", /*get/post*/
     data: {
@@ -180,7 +180,7 @@ $.ajax({
     }
 });
 $.ajax({
-    url: "https://www.easy-mock.com/mock/5be14891eeee54220716c03f/data/bank",
+    url: "https://www.easy-mock.com/mock/5beeb07628fc7826b7f1a663/smartisan/bank",
 //            url:"json.txt",
     type: "get", /*get/post*/
     data: {
