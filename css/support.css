@@ -1,0 +1,130 @@
+
+body {
+    font-family: PingFang SC, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Microsoft Yahei, \\5FAE\8F6F\96C5\9ED1, STHeiti, \\534E\6587\7EC6\9ED1, sans-serif;
+    color: #666;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/*=========================================================article*/
+article {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.a_img img {
+    display: block;
+    width: 100%;
+}
+
+.goods_list {
+    position: relative;
+    white-space: nowrap;
+    background: url(../images/goods-bg.29fd8b3f57c6089d38cb8c361d740f71.jpg) top no-repeat;
+    background-size: 100% 111%;
+}
+.goods_list:after{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 98px;
+    width: 100%;
+    height: 5px;
+    background: url(../images/lines.png) 0 100% repeat-x;
+    background-size: cover;
+    content: "";
+}
+.goods_list h1 {
+    padding: 150px 0 80px;
+    text-align: center;
+    font-size: 36px;
+    color: rgba(0, 0, 0, .8);
+    font-weight: 600;
+}
+
+.goods_list ul {
+    position: relative;
+    z-index: 2;
+    transition: all .5s linear;
+    min-width: 1220px;
+    left:0;
+    /*transform: translateX(-253px);*/
+    padding-left: 555px ;
+}
+
+.goods_list ul li {
+    display: inline-block;
+    margin-right: 20px;
+    width: 33.33%;
+    text-align: center;
+    color: rgba(0, 0, 0, .5)
+}
+
+.goods_list ul li img {
+    display: block;
+    width: 100%;
+}
+
+.goods_list ul li h2 {
+    margin: 5px 0 15px;
+    font-size: 18px;
+    color: #000;
+}
+.goods_list ul li p{
+    font-size: 15px;
+    color: rgba(0,0,0,.5);
+}
+.goods_list ul li span{
+    display: block;
+    position: relative;
+    margin: 45px 0 20px;
+    font-size: 15px;
+    color: rgba(0,0,0,.5);
+}
+.goods_list ul li span:before{
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: -35px;
+    width: 23px;
+    height: 23px;
+    background: url(../images/time-lan.fb7961901383ff3af20f014a15b7bdfa.png) no-repeat;
+    background-size: 100%;
+    transform: translateX(-50%);
+    content: "";
+}
+.goods_list ul li a{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    padding: 2px 0;
+    border-radius: 6px;
+    background-color: #5f7ed7;
+    background-image: linear-gradient(#6f97e5,#527ed9);
+    box-shadow: inset 0 1px 2px #7ea1e8;
+    text-shadow: 0 -1px 0 #4f70b3;
+    color: #fff;
+    transition: none;
+    font-size: 12px;
+}
+.goods_list ul li a.opcity{
+    opacity: 0;
+}
+.b_img img{
+    width: 100%;
+    display: block;
+}
+/*================================================================dingbu*/
+.dingbu {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+}
